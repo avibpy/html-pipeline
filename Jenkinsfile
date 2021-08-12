@@ -5,7 +5,7 @@ pipeline {
     environment {
         PASS = credentials('registry-pass') 
     }
-
+#test
     stages {
 
         stage('Build') {
