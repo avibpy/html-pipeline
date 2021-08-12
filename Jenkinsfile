@@ -7,7 +7,7 @@ pipeline {
     }
 #test
     stages {
-
+s
         stage('Build') {
             steps {
                 sh '''
