@@ -5,7 +5,7 @@ pipeline {
     environment {
         PASS = credentials('registry-pass') 
     }sdf
-#testsdf
+
     stages {
         stage('Build') {
             steps {
