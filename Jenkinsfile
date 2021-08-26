@@ -1,7 +1,7 @@
 pipeline {
 
     agent any
-    
+    sdf
     environment {
         PASS = credentials('registry-pass') 
     }sdf
