@@ -4,6 +4,8 @@ pipeline {
     
     environment {
         PASS = credentials('registry-pass') 
+        
+        sdfsdf
     }sdf
 
     stages {
