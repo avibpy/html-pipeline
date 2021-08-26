@@ -6,8 +6,7 @@ pipeline {
         PASS = credentials('registry-pass') 
     }sdf
 #testsdf
-    stages {sd
-s
+    stages {
         stage('Build') {
             steps {
                 sh '''
