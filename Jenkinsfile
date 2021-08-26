@@ -5,29 +5,17 @@ pipeline {
     environment {
         PASS = credentials('registry-pass') 
         
-        sdfsdf
-    }sdf
+        
+    }
 
     stages {
         stage('Build') {
             steps {
                 sh '''
-                    ./jenkins/build/mvn.sh mvn -B -DskipTests clean package
-                    ./jenkins/build/build.sh
+                    echo "hello world"
                 '''
             }
 
-            post {
-                success {
-                   archiveArtifacts artifacts: 'java-app/target/*.jar', fingerprint: true
-                }
-            }
-        }
-
-
-        stage('Push') {
-            steps {
-                sh './jenkins/push/push.sh'
-            }
         }
     }
+}
